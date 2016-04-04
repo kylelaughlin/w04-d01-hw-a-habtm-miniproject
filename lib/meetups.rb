@@ -2,7 +2,7 @@
 
 class Meetup < ActiveRecord::Base
 
-  has_many_and_belongs_to :members
-  has_many_and_belongs_to :topics
+  has_and_belongs_to_many :members
+  has_and_belongs_to_many :topics
 
 end

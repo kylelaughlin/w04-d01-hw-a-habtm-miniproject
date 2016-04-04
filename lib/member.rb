@@ -4,6 +4,6 @@
 class Member < ActiveRecord::Base
 
   belongs_to :membership_type
-  has_many_and_belongs_to :meetups
+  has_and_belongs_to_many :meetups
 
 end
